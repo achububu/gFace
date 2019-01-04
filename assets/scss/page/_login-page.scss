@@ -1,5 +1,5 @@
 
-.loginpage{
+.loginPage{
   background: #fff;
   color: #2699FB;
   padding: 0 25px;
@@ -21,11 +21,15 @@
       margin-bottom: 35px;
       padding-bottom: 16px;
       border-bottom: 1px solid #BCE0FD;
+      &:focus-within{
+        border-bottom: 2px solid darken(#BCE0FD,10%);
+      }
       img{
         margin-right: 16px;
       }
       input{
         border: 0;
+        outline: 0;
         width: 100%;
         text-align: start;
       }

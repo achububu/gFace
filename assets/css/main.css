@@ -3213,20 +3213,20 @@ h1, h2, h3, h4, h5 {
 img {
   max-width: 100%; }
 
-.loginpage {
+.loginPage {
   background: #fff;
   color: #2699FB;
   padding: 0 25px;
   font-family: Arial, sans-serif; }
-  .loginpage h3 {
+  .loginPage h3 {
     font-size: 20px;
     font-weight: bold;
     margin-top: 80px;
     text-align: center; }
-  .loginpage .login-form {
+  .loginPage .login-form {
     font-size: 14px;
     margin-top: 85px; }
-    .loginpage .login-form .input-group {
+    .loginPage .login-form .input-group {
       display: -moz-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -3237,26 +3237,29 @@ img {
       margin-bottom: 35px;
       padding-bottom: 16px;
       border-bottom: 1px solid #BCE0FD; }
-      .loginpage .login-form .input-group img {
+      .loginPage .login-form .input-group:focus-within {
+        border-bottom: 2px solid #8ac9fc; }
+      .loginPage .login-form .input-group img {
         margin-right: 16px; }
-      .loginpage .login-form .input-group input {
+      .loginPage .login-form .input-group input {
         border: 0;
+        outline: 0;
         width: 100%;
         text-align: start; }
-    .loginpage .login-form .btn {
+    .loginPage .login-form .btn {
       margin: 30px 0 60px 0;
       padding: 16px;
       background: #2699FB;
       color: #fff;
       width: 100%;
       font-weight: bold; }
-      .loginpage .login-form .btn:hover {
+      .loginPage .login-form .btn:hover {
         opacity: 0.8; }
-  .loginpage a {
+  .loginPage a {
     text-decoration: none;
     text-decoration: underline;
     color: #2699FB;
     font-weight: bold;
     font-size: 12px; }
-    .loginpage a:hover {
+    .loginPage a:hover {
       opacity: 0.8; }
