@@ -1,0 +1,69 @@
+#settings{
+  font-size: 14px;
+  .content-wrapper{
+    background-color: #F1F9FF;
+  }
+  img{
+    @include css3-prefix(user-select,none);
+  }
+  .checkin{
+    .user-panel{
+      margin-top: 0;
+      padding: 0;
+      &-avatar{
+        position: relative;
+        background-color: #BCE0FD;
+        padding-top: 10px;
+        padding-bottom: 22px;
+        button{
+          position: absolute;
+          top:70%;
+          left:47.5%;
+          color: #2699fb;
+          background: none;
+          border: none;
+        }
+      }
+      &-info{
+        background-color: #fff;
+        margin: -15px 10px 0 10px;
+        padding: 60px 30px;
+
+        li{
+          img{
+            margin-left: 10%;
+            margin-right: 32px;
+
+          }
+          input{
+            width: 60%;
+            &:disabled{
+              background: #fff;
+              color: #2699fb;
+              border: none;
+              box-shadow: none;
+            }
+          }
+          button{
+            color: #2699fb;
+            background: none;
+            border: none;
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .save-change{
+    width: 100%;
+    color: white;
+    background: #2699FB;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom:0;
+  }
+}

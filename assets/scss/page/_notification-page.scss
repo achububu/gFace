@@ -1,0 +1,40 @@
+#notification-page {
+
+  .direct-chat-messages{
+    height: 100%;
+    padding: 13px 34px;
+    .notification-wrapper{
+      margin-bottom: 10px;
+      .direct-chat-msg{
+        .direct-chat-img{
+          margin-top: 12px;
+        }
+        .direct-chat-text{
+          background: #2699fb;
+          margin-left: 60px;
+          border: none;
+          padding: 16px 22px;
+          font-size: 14px;
+          color: #fff;
+          &::before, &::after{
+            top: 23px;
+            border-width: 7px;
+            border-right-color: #2699fb;
+          }
+          @media #{$info-phone-6}{
+            width: 67%;
+          }
+        }
+      }
+      .time-chat {
+        text-align: center;
+        font-size: 14px;
+        p{
+          color: #2699fb;
+        }
+      }
+    }
+
+  }
+}
+

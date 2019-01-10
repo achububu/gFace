@@ -3200,6 +3200,9 @@ html, body {
 a:hover {
   text-decoration: none; }
 
+.navbar {
+  margin-bottom: 0; }
+
 ul, ol, p {
   padding: 0;
   margin: 0; }
@@ -3212,6 +3215,81 @@ h1, h2, h3, h4, h5 {
 
 img {
   max-width: 100%; }
+
+.content-wrapper {
+  background: #fff; }
+
+.navbar {
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 30px 16px 16px 16px;
+  align-items: center; }
+  .navbar div {
+    flex: 1; }
+    .navbar div a {
+      display: inline-flex;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none; }
+    .navbar div.title {
+      text-align: center; }
+      .navbar div.title h3 {
+        color: #2699FB;
+        font-size: 14px;
+        font-weight: bold; }
+    .navbar div.more-btn {
+      text-align: end; }
+
+.main-sidebar {
+  padding: 0;
+  background: #2699FB; }
+  .main-sidebar .sidebar-user-panel {
+    padding: 30px;
+    background: #BCE0FD;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+    .main-sidebar .sidebar-user-panel-avatar {
+      margin-right: 16px; }
+    .main-sidebar .sidebar-user-panel-info {
+      color: #fff; }
+      .main-sidebar .sidebar-user-panel-info .name {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 3px; }
+      .main-sidebar .sidebar-user-panel-info .description {
+        font-size: 10px; }
+  .main-sidebar .sidebar-menu {
+    padding: 30px; }
+    .main-sidebar .sidebar-menu ul {
+      list-style-type: none; }
+      .main-sidebar .sidebar-menu ul li {
+        margin-bottom: 25px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        color: #fff; }
+        .main-sidebar .sidebar-menu ul li img {
+          margin-right: 25px; }
+        .main-sidebar .sidebar-menu ul li h4 {
+          font-size: 12px;
+          font-weight: bold; }
 
 .loginPage {
   background: #fff;
@@ -3263,3 +3341,221 @@ img {
     font-size: 12px; }
     .loginPage a:hover {
       opacity: 0.8; }
+
+.user-panel {
+  margin-top: 36px; }
+  .user-panel-avatar img {
+    margin: 0 auto; }
+  .user-panel-info {
+    margin-top: 32px; }
+    .user-panel-info ul {
+      list-style-type: none;
+      text-align: center; }
+      .user-panel-info ul li {
+        margin-bottom: 52px;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        color: #2699FB; }
+        .user-panel-info ul li img {
+          margin-left: 26%; }
+        .user-panel-info ul li h4 {
+          margin-left: 32px;
+          font-size: 14px; }
+    .user-panel-info .btn {
+      display: block;
+      margin: 0 auto;
+      padding: 16px;
+      width: 45%;
+      background: #2699FB;
+      color: #fff;
+      font-weight: bold; }
+      .user-panel-info .btn:hover {
+        opacity: 0.8; }
+
+#time-sheet {
+  padding: 0 16px; }
+  #time-sheet .time-sheet {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 16px; }
+    #time-sheet .time-sheet .time-sheet-left {
+      background-color: #2699fb;
+      height: 50px;
+      width: 106px; }
+      #time-sheet .time-sheet .time-sheet-left p {
+        text-align: center;
+        margin-top: 15px;
+        color: #ffffff; }
+    #time-sheet .time-sheet .time-sheet-right {
+      width: 100%;
+      border: 1px solid #2699fb;
+      height: 50px; }
+      #time-sheet .time-sheet .time-sheet-right .time-line-start {
+        display: flex; }
+        #time-sheet .time-sheet .time-sheet-right .time-line-start .margin-top {
+          margin-top: 6px;
+          margin-left: 20px;
+          color: #2699fb; }
+      #time-sheet .time-sheet .time-sheet-right .time-line-end .margin-top {
+        margin-top: 6px;
+        margin-left: 20px;
+        color: #2699fb; }
+      #time-sheet .time-sheet .time-sheet-right .where {
+        margin-left: 53px;
+        color: #2699fb; }
+
+#notification-page .direct-chat-messages {
+  height: 100%;
+  padding: 13px 34px; }
+  #notification-page .direct-chat-messages .notification-wrapper {
+    margin-bottom: 10px; }
+    #notification-page .direct-chat-messages .notification-wrapper .direct-chat-msg .direct-chat-img {
+      margin-top: 12px; }
+    #notification-page .direct-chat-messages .notification-wrapper .direct-chat-msg .direct-chat-text {
+      background: #2699fb;
+      margin-left: 60px;
+      border: none;
+      padding: 16px 22px;
+      font-size: 14px;
+      color: #fff; }
+      #notification-page .direct-chat-messages .notification-wrapper .direct-chat-msg .direct-chat-text::before, #notification-page .direct-chat-messages .notification-wrapper .direct-chat-msg .direct-chat-text::after {
+        top: 23px;
+        border-width: 7px;
+        border-right-color: #2699fb; }
+      @media only screen and (max-width: 375px) {
+        #notification-page .direct-chat-messages .notification-wrapper .direct-chat-msg .direct-chat-text {
+          width: 67%; } }
+    #notification-page .direct-chat-messages .notification-wrapper .time-chat {
+      text-align: center;
+      font-size: 14px; }
+      #notification-page .direct-chat-messages .notification-wrapper .time-chat p {
+        color: #2699fb; }
+
+#mess-page .box {
+  border: 0;
+  box-shadow: none; }
+  #mess-page .box-body {
+    padding: 0;
+    margin-top: 20px; }
+  #mess-page .box .direct-chat-messages {
+    height: 100%;
+    padding: 0;
+    padding-bottom: 60px; }
+    #mess-page .box .direct-chat-messages .direct-chat-msg {
+      border-bottom: 1px solid #f2f2f2;
+      margin-bottom: 20px;
+      padding: 0 24px; }
+      #mess-page .box .direct-chat-messages .direct-chat-msg .direct-chat-text {
+        border: 0;
+        background: none;
+        margin-top: 0;
+        padding: 0; }
+        #mess-page .box .direct-chat-messages .direct-chat-msg .direct-chat-text::before, #mess-page .box .direct-chat-messages .direct-chat-msg .direct-chat-text::after {
+          border: 0; }
+        #mess-page .box .direct-chat-messages .direct-chat-msg .direct-chat-text .msg-info {
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          color: #2699fb;
+          font-size: 14px; }
+          #mess-page .box .direct-chat-messages .direct-chat-msg .direct-chat-text .msg-info .name {
+            font-weight: bold; }
+        #mess-page .box .direct-chat-messages .direct-chat-msg .direct-chat-text .msg-content {
+          color: #2699fb;
+          font-size: 14px;
+          margin-bottom: 16px; }
+          #mess-page .box .direct-chat-messages .direct-chat-msg .direct-chat-text .msg-content p {
+            -webkit-word-wrap: break-word;
+            -khtml-word-wrap: break-word;
+            -moz-word-wrap: break-word;
+            -ms-word-wrap: break-word;
+            -o-word-wrap: break-word;
+            word-wrap: break-word; }
+  #mess-page .box .box-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border: 0;
+    padding: 10px 20px 20px 20px; }
+    #mess-page .box .box-footer input {
+      color: #2699fb;
+      border-radius: 30px 30px 30px 30px;
+      height: 50px;
+      border: solid 2px #ddeffd;
+      width: 98%; }
+      #mess-page .box .box-footer input::placeholder {
+        color: #2699fb; }
+    #mess-page .box .box-footer button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #BCE0FD; }
+      #mess-page .box .box-footer button:hover {
+        opacity: 0.8; }
+
+#settings {
+  font-size: 14px; }
+  #settings .content-wrapper {
+    background-color: #F1F9FF; }
+  #settings img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
+  #settings .checkin .user-panel {
+    margin-top: 0;
+    padding: 0; }
+    #settings .checkin .user-panel-avatar {
+      position: relative;
+      background-color: #BCE0FD;
+      padding-top: 10px;
+      padding-bottom: 22px; }
+      #settings .checkin .user-panel-avatar button {
+        position: absolute;
+        top: 70%;
+        left: 47.5%;
+        color: #2699fb;
+        background: none;
+        border: none; }
+    #settings .checkin .user-panel-info {
+      background-color: #fff;
+      margin: -15px 10px 0 10px;
+      padding: 60px 30px; }
+      #settings .checkin .user-panel-info li img {
+        margin-left: 10%;
+        margin-right: 32px; }
+      #settings .checkin .user-panel-info li input {
+        width: 60%; }
+        #settings .checkin .user-panel-info li input:disabled {
+          background: #fff;
+          color: #2699fb;
+          border: none;
+          box-shadow: none; }
+      #settings .checkin .user-panel-info li button {
+        color: #2699fb;
+        background: none;
+        border: none; }
+      #settings .checkin .user-panel-info li:last-child {
+        margin-bottom: 0; }
+  #settings .save-change {
+    width: 100%;
+    color: white;
+    background: #2699FB;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0; }
+
+body {
+  font-size: 16px;
+  font-family: sans-serif; }

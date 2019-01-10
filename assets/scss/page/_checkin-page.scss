@@ -1,0 +1,41 @@
+.user-panel{
+  margin-top: 36px;
+  &-avatar{
+    img{
+      margin: 0 auto;
+    }
+  }
+  &-info{
+    margin-top: 32px;
+    ul{
+      list-style-type: none;
+      text-align: center;
+      li{
+        margin-bottom: 52px;
+        @include flex();
+        align-items: center;
+        color: #2699FB;
+        img{
+          margin-left: 26%;
+        }
+        h4{
+          margin-left: 32px;
+          font-size: 14px;
+        }
+      }
+    }
+    .btn{
+      display: block;
+      margin: 0 auto;
+      padding: 16px;
+      width: 45%;
+      background:#2699FB;
+      color: #fff;
+      font-weight: bold;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+
+}

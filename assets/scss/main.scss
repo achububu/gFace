@@ -43,6 +43,14 @@
 
 // Page specific styles
 @import "page/login-page";
-.body{
+@import "page/checkin-page";
+@import "page/time-sheet";
+@import "page/notification-page";
+@import "page/messages_page";
+@import "page/setting-page";
 
+
+body{
+  font-size: 16px;
+  font-family: sans-serif;
 }

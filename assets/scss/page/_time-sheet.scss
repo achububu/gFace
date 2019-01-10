@@ -1,0 +1,43 @@
+#time-sheet{
+  padding: 0 16px;
+  .time-sheet {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 16px;
+    .time-sheet-left {
+      background-color: #2699fb;
+      height: 50px;
+      width: 106px;
+      p {
+        text-align: center;
+        margin-top: 15px;
+        color: #ffffff;
+      }
+    }
+    .time-sheet-right {
+      width: 100%;
+      border: 1px solid #2699fb;
+      height: 50px;
+      .time-line-start {
+        display: flex;
+        .margin-top {
+          margin-top: 6px;
+          margin-left: 20px;
+          color: #2699fb;
+        }
+      }
+      .time-line-end {
+        .margin-top {
+          margin-top: 6px;
+          margin-left: 20px;
+          color: #2699fb;
+        }
+      }
+      .where {
+        margin-left: 53px;
+        color: #2699fb;
+      }
+    }
+  }
+
+}
