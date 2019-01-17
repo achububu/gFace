@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/vendor/AdminLTE.css">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body id="notification-page">
+<body id="notification-page" class="fixed">
 
 <div class="wrapper">
     <aside class="main-sidebar">
@@ -36,34 +36,51 @@
             <div class="sidebar-menu">
                 <ul>
                     <li>
-                        <img src="assets/img/icons/sidebar-map-pin.png" alt="Map-pin">
-                        <h4>CHECKIN / CHECKOUT</h4>
+                        <a href="./checkin.html">
+                            <img src="assets/img/icons/sidebar-map-pin.png" alt="Map-pin">
+                            <p>CHECKIN / CHECKOUT</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/img/icons/sidebar-messages.png" alt="Messages">
-                        <h4>MESSAGES</h4>
+                        <a href="./messages.html">
+                            <img src="assets/img/icons/sidebar-messages.png" alt="Messages">
+                            <p>MESSAGES</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/img/icons/sidebar-notifications.png" alt="Notification">
-                        <h4>NOTIFICATIONS</h4>
+                        <a class='active' href="./notification.html">
+                            <img src="assets/img/icons/sidebar-notifications.png" alt="Notification">
+                            <p>NOTIFICATIONS</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/img/icons/sidebar-time-sheet.png" alt="Notification">
-                        <h4>TIME SHEET</h4>
+                        <a href="./timesheet.html">
+                            <img src="assets/img/icons/sidebar-time-sheet.png" alt="Time Sheet">
+                            <p>TIME SHEET</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="assets/img/icons/sidebar-settings.png" alt="Notification">
-                        <h4>SETTINGS</h4>
+                        <a href="./setting.html">
+                            <img src="assets/img/icons/sidebar-settings.png" alt="setting">
+                            <p>SETTINGS</p>
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
     </aside>
+
+
+    <!--<div class="content-wrapper">-->
+        <!---->
+    <!--</div>-->
+
     <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
         <nav class="navbar" role="navigation">
             <div class="sidebar-btn">
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <img src="assets/img/Menu.png" alt="Menu" class="img-responsive">
+                <a href="#" class="sidebar-toggle" role="button">
+                    <span class="fa fa-bars"></span>
                 </a>
             </div>
             <div class="title">
@@ -71,124 +88,124 @@
             </div>
             <div class="more-btn">
                 <a href="#">
-                    <img src="assets/img/More.png" alt="Menu" class="img-responsive">
+                    <span class="fa fa-ellipsis-v"></span>
                 </a>
             </div>
         </nav>
+
+        <!-- Main content -->
         <div class="direct-chat-messages">
-            <!-- Message. Default to the left -->
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
+                <!-- Message. Default to the left -->
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
                     </div>
-                    <!-- /.direct-chat-text -->
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
                 </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
+                </div>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
+                </div>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
+                </div>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
+                </div>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
+                </div>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
+                </div>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
+                </div>
+                <div class="notification-wrapper">
+                    <div class="direct-chat-msg">
+                        <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
+                        <div class="direct-chat-text">
+                            <p>Sed ut perspiciatis omnis</p>
+                        </div>
+                        <!-- /.direct-chat-text -->
+                    </div>
+                    <div class="direct-chat-info clearfix time-chat">
+                        <p class="direct-chat-timestamp">1/2/2018</p>
+                    </div>
                 </div>
             </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-            <div class="notification-wrapper">
-                <div class="direct-chat-msg">
-                    <img class="direct-chat-img img-responsive" src="./assets/img/avatar.png" alt="message user image" class="img-responsive">
-                    <div class="direct-chat-text">
-                        <p>Sed ut perspiciatis omnis</p>
-                    </div>
-                    <!-- /.direct-chat-text -->
-                </div>
-                <div class="direct-chat-info clearfix time-chat">
-                    <p class="direct-chat-timestamp">1/2/2018</p>
-                </div>
-            </div>
-        </div>
-
-
-
+        <!-- /.content -->
     </div>
 </div>
 
@@ -200,11 +217,13 @@
 <script src="assets/js/vendor/fastclick.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
-    $(function() {
-        FastClick.attach(document.getElementsByClassName("sidebar-toggle"));
-    });
+
+
+    // $(document).on('click', '.sidebar a', function (e) {
+    //     if($(this).attr('href') != '#') {
+    //     }
+    // });
 </script>
 <!--end js-->
-
 </body>
 </html>

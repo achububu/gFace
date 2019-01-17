@@ -1,8 +1,9 @@
 #notification-page {
-
   .direct-chat-messages{
     height: 100%;
     padding: 13px 34px;
+    padding-top:92px;
+
     .notification-wrapper{
       margin-bottom: 10px;
       .direct-chat-msg{
@@ -37,4 +38,5 @@
 
   }
 }
+.fixed .content-wrapper{padding-top: 0;}
 

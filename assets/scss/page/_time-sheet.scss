@@ -1,5 +1,6 @@
 #time-sheet{
   padding: 0 16px;
+  padding-top: 90px;
   .time-sheet {
     display: flex;
     font-size: 14px;
@@ -34,6 +35,7 @@
         }
       }
       .where {
+        margin-top: -5px;
         margin-left: 53px;
         color: #2699fb;
       }

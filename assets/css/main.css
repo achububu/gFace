@@ -8,6 +8,7 @@
   note: All CSS3 Properties are being supported by Safari 5
   more info: http://www.findmebyip.com/litmus/#css3-properties
 ------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
@@ -3200,9 +3201,6 @@ html, body {
 a:hover {
   text-decoration: none; }
 
-.navbar {
-  margin-bottom: 0; }
-
 ul, ol, p {
   padding: 0;
   margin: 0; }
@@ -3225,7 +3223,15 @@ img {
   display: -webkit-flex;
   display: flex;
   padding: 30px 16px 16px 16px;
-  align-items: center; }
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 2px 0 0 #e6e6e6;
+  background-color: #3c8dbc;
+  margin-bottom: 0; }
   .navbar div {
     flex: 1; }
     .navbar div a {
@@ -3235,11 +3241,12 @@ img {
       -moz-user-select: none;
       -ms-user-select: none;
       -o-user-select: none;
-      user-select: none; }
+      user-select: none;
+      color: #fff; }
     .navbar div.title {
       text-align: center; }
       .navbar div.title h3 {
-        color: #2699FB;
+        color: #fff;
         font-size: 14px;
         font-weight: bold; }
     .navbar div.more-btn {
@@ -3247,10 +3254,10 @@ img {
 
 .main-sidebar {
   padding: 0;
-  background: #2699FB; }
+  background: #1a2226; }
   .main-sidebar .sidebar-user-panel {
     padding: 30px;
-    background: #BCE0FD;
+    background: #222d32;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -3272,24 +3279,30 @@ img {
       list-style-type: none; }
       .main-sidebar .sidebar-menu ul li {
         margin-bottom: 25px;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        align-items: center;
-        color: #fff; }
-        .main-sidebar .sidebar-menu ul li img {
-          margin-right: 25px; }
-        .main-sidebar .sidebar-menu ul li h4 {
-          font-size: 12px;
-          font-weight: bold; }
+        cursor: pointer; }
+        .main-sidebar .sidebar-menu ul li a {
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+          color: #8aa4af;
+          text-decoration: none; }
+          .main-sidebar .sidebar-menu ul li a img {
+            margin-right: 25px; }
+          .main-sidebar .sidebar-menu ul li a p {
+            font-size: 12px;
+            font-weight: bold; }
+          .main-sidebar .sidebar-menu ul li a:hover {
+            color: white; }
+          .main-sidebar .sidebar-menu ul li a.active {
+            color: white; }
 
 .loginPage {
   background: #fff;
@@ -3343,7 +3356,8 @@ img {
       opacity: 0.8; }
 
 .user-panel {
-  margin-top: 36px; }
+  position: relative;
+  padding-top: 105px; }
   .user-panel-avatar img {
     margin: 0 auto; }
   .user-panel-info {
@@ -3375,8 +3389,135 @@ img {
       .user-panel-info .btn:hover {
         opacity: 0.8; }
 
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat';
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  color: #444; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(to bottom, #348F50, #56B4D3);
+  transition: all 0.3s;
+  position: fixed;
+  top: 0;
+  height: 100vh; }
+  #sidebar .sidebar-header {
+    padding: 15px 5px;
+    text-align: center;
+    height: 60px;
+    margin-bottom: 10px; }
+    #sidebar .sidebar-header img {
+      width: 42px;
+      height: auto; }
+  #sidebar ul.list-unstyled li {
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    #sidebar ul.list-unstyled li a {
+      height: 40px;
+      padding: 8px 25px;
+      font-weight: 300;
+      color: #ffffff;
+      letter-spacing: 0.1px;
+      display: block; }
+      #sidebar ul.list-unstyled li a i {
+        font-size: 16px;
+        width: 18px;
+        text-align: center;
+        margin-right: 15px; }
+    #sidebar ul.list-unstyled li:first-child a i {
+      font-size: 18px; }
+    #sidebar ul.list-unstyled li:hover, #sidebar ul.list-unstyled li.active {
+      background-color: rgba(255, 255, 255, 0.15); }
+  #sidebar.collapse-sidebar {
+    min-width: 50px;
+    max-width: 50px;
+    text-align: center; }
+    #sidebar.collapse-sidebar .sidebar-header img {
+      width: 30px; }
+    #sidebar.collapse-sidebar ul.list-unstyled li a {
+      height: 60px;
+      padding: 20px 0; }
+      #sidebar.collapse-sidebar ul.list-unstyled li a i {
+        font-size: 18px;
+        width: 20px;
+        margin-right: 0; }
+      #sidebar.collapse-sidebar ul.list-unstyled li a span.sidebar-menu-text {
+        display: none; }
+    #sidebar.collapse-sidebar ul.list-unstyled li:first-child a i {
+      font-size: 20px; }
+
+#layout-admin {
+  -webkit-transform: translate3d(50px, 0, 0);
+  transform: translate3d(50px, 0, 0);
+  width: calc(100% - 50px);
+  min-height: 100vh;
+  transition: all 0.3s;
+  background-color: #f5f7f9; }
+  #layout-admin .header {
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 25px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    width: 100%; }
+    #layout-admin .header .header-left {
+      font-size: 0; }
+      #layout-admin .header .header-left button.show-sidebar {
+        background-color: transparent;
+        border: none;
+        font-size: 28px;
+        color: #999999;
+        -webkit-text-stroke: 1.5px white;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 25px;
+        outline: none;
+        cursor: pointer; }
+      #layout-admin .header .header-left .title {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 22px;
+        font-weight: 600;
+        color: #348F50; }
+        #layout-admin .header .header-left .title span {
+          font-weight: normal; }
+  #layout-admin .content-admin {
+    padding: 20px; }
+    #layout-admin .content-admin .title-content {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 30px; }
+  #layout-admin.collapse-sidebar {
+    transform: translate3d(250px, 0, 0);
+    -webkit-transform: translate3d(250px, 0, 0);
+    -moz-transform: translate3d(250px, 0, 0);
+    -ms-transform: translate3d(250px, 0, 0);
+    -o-transform: translate3d(250px, 0, 0); }
+
 #time-sheet {
-  padding: 0 16px; }
+  padding: 0 16px;
+  padding-top: 90px; }
   #time-sheet .time-sheet {
     display: flex;
     font-size: 14px;
@@ -3404,12 +3545,14 @@ img {
         margin-left: 20px;
         color: #2699fb; }
       #time-sheet .time-sheet .time-sheet-right .where {
+        margin-top: -5px;
         margin-left: 53px;
         color: #2699fb; }
 
 #notification-page .direct-chat-messages {
   height: 100%;
-  padding: 13px 34px; }
+  padding: 13px 34px;
+  padding-top: 92px; }
   #notification-page .direct-chat-messages .notification-wrapper {
     margin-bottom: 10px; }
     #notification-page .direct-chat-messages .notification-wrapper .direct-chat-msg .direct-chat-img {
@@ -3434,12 +3577,15 @@ img {
       #notification-page .direct-chat-messages .notification-wrapper .time-chat p {
         color: #2699fb; }
 
+.fixed .content-wrapper {
+  padding-top: 0; }
+
 #mess-page .box {
   border: 0;
   box-shadow: none; }
   #mess-page .box-body {
     padding: 0;
-    margin-top: 20px; }
+    padding-top: 100px; }
   #mess-page .box .direct-chat-messages {
     height: 100%;
     padding: 0;
@@ -3517,12 +3663,12 @@ img {
     #settings .checkin .user-panel-avatar {
       position: relative;
       background-color: #BCE0FD;
-      padding-top: 10px;
+      padding-top: 110px;
       padding-bottom: 22px; }
       #settings .checkin .user-panel-avatar button {
         position: absolute;
-        top: 70%;
-        left: 47.5%;
+        top: 82%;
+        left: 46.5%;
         color: #2699fb;
         background: none;
         border: none; }
